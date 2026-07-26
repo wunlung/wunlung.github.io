@@ -1,0 +1,10 @@
+_site/
+_drafts/
+.bundle/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+vendor/
+old_resume/
+codex-personal-website-context.md
+context/

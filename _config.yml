@@ -1,0 +1,62 @@
+title: "Wun Lung Wong"
+description: "AI engineering leader building human-centred systems that work in production."
+url: "https://wunlung.github.io"
+baseurl: ""
+
+author:
+  name: "Wun Lung Wong"
+
+github_username: "wunlung"
+linkedin_username: "wunlung"
+
+permalink: /blog/:title/
+timezone: Australia/Sydney
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+collections:
+  notes:
+    output: true
+    permalink: /notes/:name/
+  projects:
+    output: true
+    permalink: /projects/:name/
+  labs:
+    output: true
+    permalink: /lab/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: note
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+  - scope:
+      path: ""
+      type: labs
+    values:
+      layout: lab
+
+exclude:
+  - README.md
+  - codex-personal-website-context.md
+  - old_resume
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - context
