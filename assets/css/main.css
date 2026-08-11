@@ -91,6 +91,20 @@ h2 { margin-top: 2.5rem; }
 p, ul, ol { margin: 1.15rem 0; }
 img { max-width: 100%; height: auto; border-radius: 3px; }
 
+.app-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+.app-heading img {
+  flex: 0 0 auto;
+  border-radius: 24px;
+  box-shadow: 0 7px 18px var(--shadow);
+}
+.app-heading .eyebrow { margin-bottom: 0.4rem; }
+.app-heading h1 { margin-bottom: 0; }
+
 .intro { margin-bottom: 3.5rem; }
 .intro p { max-width: 620px; color: var(--muted); font-size: 1.12rem; }
 .hero-note { margin-top: 1.8rem; font-size: 0.9rem !important; }
@@ -242,4 +256,6 @@ footer {
   .principles { grid-template-columns: 1fr; }
   .resume-entry, .skill-groups { grid-template-columns: 1fr; gap: 0.5rem; }
   .project-facts { grid-template-columns: 1fr; }
+  .app-heading { align-items: flex-start; gap: 0.9rem; }
+  .app-heading img { width: 82px; height: 82px; border-radius: 18px; }
 }
